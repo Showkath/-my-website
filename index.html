@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Platform Guide – Static & Dynamic Sites</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 30px;
+      background: #f9f9f9;
+      color: #222;
+    }
+    h2, h3 {
+      color: #333;
+    }
+    ul {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      padding-left: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+      background-color: #fff;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+    }
+    th {
+      background-color: #f1f1f1;
+    }
+    .note {
+      background-color: #fef9c3;
+      padding: 10px;
+      border-left: 5px solid #facc15;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Platforms Supporting Static and Dynamic Websites</h2>
+  <div class="note">
+    <strong>Recommendations:</strong><br>
+    For professional or growing use cases, consider upgrading as your audience increases. See detailed platform and cost breakdown below.
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Platform</th>
+        <th>Free Tier</th>
+        <th>Supports Server</th>
+        <th>Database</th>
+        <th>Maintenance/Upgrade Cost</th>
+        <th>Official Website</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Google Sites</strong></td>
+        <td>✅ Yes</td>
+        <td>❌ No</td>
+        <td>❌ No</td>
+        <td>Free. Custom domain setup via Google Domains or external DNS (domain extra).</td>
+        <td><a href="https://sites.google.com" target="_blank">sites.google.com</a></td>
+      </tr>
+      <tr>
+        <td><strong>Netlify</strong></td>
+        <td>✅ Yes</td>
+        <td>✅ Yes (Serverless Functions)</td>
+        <td>Via API (e.g., Airtable, Google Sheets)</td>
+        <td>Free for small projects; paid starts ~$19/mo for advanced backend/API use.</td>
+        <td><a href="https://www.netlify.com" target="_blank">netlify.com</a></td>
+      </tr>
+      <tr>
+        <td><strong>Vercel</strong></td>
+        <td>✅ Yes</td>
+        <td>✅ Yes (Serverless)</td>
+        <td>External DB (e.g., Supabase, Firebase)</td>
+        <td>Free for hobby use; starts ~$20/month for team/project scaling.</td>
+        <td><a href="https://vercel.com" target="_blank">vercel.com</a></td>
+      </tr>
+      <tr>
+        <td><strong>Firebase (Google)</strong></td>
+        <td>✅ Yes</td>
+        <td>✅ Yes (Functions + Auth)</td>
+        <td>✅ Firestore / Realtime DB</td>
+        <td>Free Spark plan; pay-as-you-go after limits (~$5–10 typical/month).</td>
+        <td><a href="https://firebase.google.com" target="_blank">firebase.google.com</a></td>
+      </tr>
+      <tr>
+        <td><strong>Render</strong></td>
+        <td>✅ Yes</td>
+        <td>✅ Yes (Full Node/Express, Django etc.)</td>
+        <td>✅ PostgreSQL</td>
+        <td>Free for basic use; DB and backend each may cost ~$7/month when scaled.</td>
+        <td><a href="https://render.com" target="_blank">render.com</a></td>
+      </tr>
+      <tr>
+        <td><strong>Replit</strong></td>
+        <td>✅ Yes</td>
+        <td>✅ Yes (All code-in-browser)</td>
+        <td>✅ Replit DB / External</td>
+        <td>Free for learning; paid plans start at ~$7/mo for performance and teams.</td>
+        <td><a href="https://replit.com" target="_blank">replit.com</a></td>
+      </tr>
+      <tr>
+        <td><strong>GitHub Pages</strong></td>
+        <td>✅ Yes</td>
+        <td>❌ No (Static only)</td>
+        <td>❌ No</td>
+        <td>Free forever; use APIs for form handling or dynamic data.</td>
+        <td><a href="https://pages.github.com" target="_blank">pages.github.com</a></td>
+      </tr>
+      <tr>
+        <td><strong>Glitch</strong></td>
+        <td>✅ Yes</td>
+        <td>✅ Yes (Node.js based)</td>
+        <td>In-memory or external DB</td>
+        <td>Free limited uptime; paid plans from ~$8/mo</td>
+        <td><a href="https://glitch.com" target="_blank">glitch.com</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>For Full-Featured Applications</h3>
+  <ul>
+    <li><strong>Render:</strong> Ideal for web apps needing authentication, user tracking, or scheduled tasks.</li>
+    <li><strong>Firebase:</strong> Great for real-time databases, user login, analytics, and quizzes.</li>
+  </ul>
+
+  <h3>For Enhanced Static Sites (with Forms, Quizzes, Integrations)</h3>
+  <ul>
+    <li><strong>Netlify:</strong> Supports HTML/JS/CSS, contact forms (via Netlify Forms), Git integration.</li>
+    <li><strong>Vercel:</strong> Optimized for modern static site frameworks like Next.js, easy deployment.</li>
+    <li><strong>Form Backends:</strong> Add forms to static pages using services like <a href="https://formspree.io" target="_blank">Formspree</a> or <a href="https://usebasin.com" target="_blank">Basin</a>.</li>
+    <li><strong>Google Sheets:</strong> Collect form submissions from static pages using Google Forms or Sheets-based backends.</li>
+  </ul>
+
+  <h3>💰 Free Tier Coverage</h3>
+  <ul>
+    <li>Supports up to 100–1,000 monthly users</li>
+    <li>10K–50K page views monthly</li>
+    <li>Small databases up to 100MB–500MB</li>
+    <li>Best suited for community, school, or non-commercial use</li>
+    <li>Beyond free tier, typical pricing: ₹300–₹800/month for light use</li>
+  </ul>
+
+  <h3>Google Sites & Custom Domain Cost</h3>
+  <ul>
+    <li><strong>Google Sites:</strong> 100% free platform. No hosting or builder cost.</li>
+    <li><strong>Only Cost:</strong> If you want a custom domain (like www.showkath.com)</li>
+  </ul>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Option</th>
+        <th>Provider</th>
+        <th>Cost (Approx.)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Buy from Google Domains</td>
+        <td>Now via Squarespace</td>
+        <td>₹900–₹1500/year</td>
+      </tr>
+      <tr>
+        <td>Buy from GoDaddy / Namecheap</td>
+        <td>3rd Party</td>
+        <td>₹700–₹2000/year</td>
+      </tr>
+      <tr>
+        <td>Use GitHub Pages</td>
+        <td>.github.io subdomain</td>
+        <td>₹0 (Free)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>⚠️ Notes</h3>
+  <ul>
+    <li>Google Domains is now owned by Squarespace (2023), but setup still integrates smoothly with Google Sites.</li>
+    <li>If you care about professionalism or brand trust, choose a <strong>.com</strong> or <strong>.org</strong> domain.</li>
+    <li>You only pay for the domain. No extra charges from Google Sites itself.</li>
+  </ul>
+
+  <h3>📄 How to Upload and Host Your Website Using GitHub Pages (FREE)</h3>
+  <ol>
+    <li>Create a new repository in your GitHub account. Example: <code>my-website</code></li>
+    <li>Upload your HTML/CSS/JS files into this repository. Make sure your homepage is named <code>index.html</code>.</li>
+    <li>Go to <strong>Settings &gt; Pages</strong> in the repository.</li>
+    <li>Under "Source", choose <strong>main branch</strong> and root folder.</li>
+    <li>Click Save. GitHub will give you a live link like <code>https://yourusername.github.io/my-website/</code></li>
+  </ol>
+
+  <h4>✅ Tips:</h4>
+  <ul>
+    <li>You can update content anytime by uploading new files or editing online.</li>
+    <li>Supports static websites only — no built-in database or forms (use Formspree etc. for that).</li>
+    <li>Custom domain setup is possible via GitHub DNS settings.</li>
+    <li>No ads, branding, or storage limits for basic personal websites.</li>
+  </ul>
+</body>
+</html>
